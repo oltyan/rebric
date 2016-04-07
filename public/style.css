@@ -1,8 +1,18 @@
-body {
-    background-color: Gray;
+html{
+    color: #838994;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
 }
+
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+
+body {
+    background-color: Gray;
+}
+
 
 div {
     border:1px solid black;
@@ -11,20 +21,37 @@ div {
 .top-navigation {
     background-color: white;
 }
+
 .top-navigation > .content {
     width: 60em;
     height: 4.375em;
     margin: 0 auto;
 }
 
+.logo {
+    margin-left: 1em;
+    margin-top: .35em;
+}
+
 .top-navigation .links {
     float: right;
     list-style: none;
-    padding: 0;
     margin-top: 1.5em;
+    padding: 0;
+    padding: 0em 2em;
 }
 
 .top-navigation .links li {
     display: inline-block;
-    margin: 0 auto;
+    margin-left: 2.5em;
+}
+
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
